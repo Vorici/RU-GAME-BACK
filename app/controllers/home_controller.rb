@@ -9,6 +9,6 @@ class HomeController < ApplicationController
  
   # Authorized only method
   def auth
-    render json: { status: 200, user: "#{current_user.username}" }
+    render json: { status: 200, user: "#{current_user.username}", user_id: "#{current_user.id}" }
   end
 end

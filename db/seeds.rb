@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Game.create(name: 'Wriggley Field', address: '123 fake street', sport: 'baseball', max_players: 5)
+UserGame.create(user_id: 2, game_id: 1)
+UserGame.create(user_id: 1, game_id: 1)
+
+
+
+
+# led = User.first
+# led.games

@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+has_many :user_games
+has_many :games, :through => :user_games
+
+
   # Necessary to authenticate.
   has_secure_password
  

@@ -17,6 +17,12 @@ Rails.application.routes.draw do
   patch  '/user/:id'      => 'users#update'
   delete '/user/:id'      => 'users#destroy'
 
+  get    '/games'          => 'games#index'
+  get    '/games/current'  => 'games#current'
+  post   '/games/create'  => 'games#create'
+  patch  '/game/:id'      => 'games#update'
+  delete '/game/:id'      => 'games#destroy'
+
 end
 
 
